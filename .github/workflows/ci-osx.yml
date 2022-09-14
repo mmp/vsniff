@@ -31,8 +31,4 @@ jobs:
         go build -o ./vsniff ./...
         ls
 
-    - name: Upload release (maybe)
-      uses: softprops/action-gh-release@v1
-      if: startsWith(github.ref, 'refs/tags/')
-      with:
-        files: vsniff
+    # Code signing is necessary so we don't do mac releases from github actions...
