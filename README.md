@@ -21,8 +21,9 @@ connection to VATSIM for VRC.  The recorded session file can later be
 played back by [vice](https://github.com/mmp/vice) using its built-in
 "replay" functionality.
 
-To compile `vsniff`, run `go install
-github.com/mmp/vsniff@latest`. Alternatively, binaries are available on the
-releases page.
+To build `vsniff` from source, run `go install
+github.com/mmp/vsniff@latest`. Alternatively, binaries for Windows and OSX
+can be downloaded from the [releases
+page](https://github.com/mmp/vsniff/releases/latest).
 
 
