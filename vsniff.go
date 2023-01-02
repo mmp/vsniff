@@ -97,9 +97,6 @@ func serveMessages(conn *net.TCPConn) {
 	for {
 		for ; n < len(messages); n += 1 {
 			msg := messages[n]
-			if msg.Sent {
-				continue
-			}
 			if _, err := conn.Write([]byte(msg.Contents)); err != nil {
 				lg.Printf("%v: error sending message %d: %+v. Closing connection.", err, n, msg)
 				conn.Close()
